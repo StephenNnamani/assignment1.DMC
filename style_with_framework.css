@@ -1,0 +1,20 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+body {   
+    min-height: 100vh;
+    background-color: rgb(243, 255, 255);
+}
+
+.container {
+    margin-top: 2em;
+}
+
+.header{
+    margin-left: 50%;
+}
+
+.roundo{
+    border: white !important; 
+    border-style: solid !important; 
+    border-radius: 50% !important;
+}

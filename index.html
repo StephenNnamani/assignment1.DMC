@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.000000" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="style_with_framework.css">
+  <!-- SVG Favicon -->
+   <link rel="shortcut icon" href="./images/myfavicon.ico" type="image/x-icon">
+  <!-- SVG Favicon -->
+  <title>Steve Nnamani</title>
+</head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    const $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.parentNode.removeChild($notification);
+    });
+  });
+});
+function updateClock() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString();
+    const clockEl = document.getElementById("realtime-clock");
+    if (clockEl) {
+      clockEl.textContent = timeString;
+    }
+  }
+
+  updateClock();
+  setInterval(updateClock, 1000);
+</script>
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand" style="padding-left: 2%; padding-right: 2%;">
+      <img class="navbar-item" src="images/Logos.svg" width="50px">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+  
+        <a class="navbar-item">
+          About Me
+        </a>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a href="https://www.linkedin.com/in/stephennnamani/" class="button is-primary fa-brands fa-linkedin"><strong>LinkedIn</strong></a>  
+          <a href="https://github.com/StephenNnamani/" class="button is-dark fa-brands fa-github">Github</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Place your HTML code below -->
+  <div class="notification is-primary is-light">
+    <button class="delete"></button>
+    Want to learn more about my professional background and experience?
+    Connect with me on LinkedIn to see what I’ve been working on.
+    I regularly share updates, insights, and industry-related content there.
+    <a href="https://www.linkedin.com/in/stephennnamani/">Click here</a> to visit my LinkedIn profile and let’s stay in touch!
+  </div>
+  <figure class="image">
+    <img src="images/aau.jpg" width="1000px"/>
+  </figure>
+  <div>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <p class="subtitle">This content is about my first semester in University of Klagenfurt</p>
+        <p class="title">Hello, AAU!</p>
+      </div>
+    </section>
+  </div>
+  <br style="margin-top: 5%;">
+  <div class="columns container">
+    <div class="column">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img
+              src="./images/robot-handshake-human-background-futuristic-digital-age.jpg"
+              alt="Banner image"
+            />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <img class="roundo"
+                  src="https://scontent-vie1-1.xx.fbcdn.net/v/t39.30808-6/490979524_9796014480456932_5457019527790783257_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=qZ5xAh9EBEkQ7kNvwEJRHLL&_nc_oc=AdnE5ULEZs2TYvghoIBIEz9Z6GxXSDObAIfH6I_lrCe3dNKt_lkpkPRzLWlYlndairk&_nc_zt=23&_nc_ht=scontent-vie1-1.xx&_nc_gid=TlTPFQNe1sndzq3Arh8uOA&oh=00_AfG4WiyIeGFsECoZv7CrQLwrjYN4pwhYI5b5B_PkW96ttQ&oe=6807425A"
+                  alt="Profile image"
+                />
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Nnamani Stephen</p>
+              <p class="subtitle is-6" style="color: #007d64;">Student</p>
+            </div>
+          </div>
+      
+          <div class="content">
+            <p class="title subtitle"><b style="color: #00392e;">Skills</b></p>
+            <ul>
+              <li>BackEnd with .Net framework</li>
+              <li>TypeScript</li>
+              <li>HTML & css</li>
+              <li>Graphic Design</li>
+            </ul>
+            <p class="title subtitle"><b style="color: #00392e;">Hobbys</b></p>
+            <ol>
+              <li>Playing Football</li>
+              <li>Floorball</li>
+              <li>Biking</li>
+              <li>Jogging</li>
+              <li>Deep conversation</li>
+              <li>Intellectual conversations</li>
+            </ol>
+            <br />
+            <p>Current Time: <span class="button is-primary is-light" id="realtime-clock"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container column is-three-fifths" style="text-align: justify;">
+      <p class="hero-body title">Details about my first semester</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Hic necessitatibus assumenda provident maiores adipisci repellendus cumque, 
+        sunt eum facere labore sit nulla laboriosam obcaecati debitis ratione 
+        possimus illum, amet excepturi.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Hic necessitatibus assumenda provident maiores adipisci repellendus cumque, 
+        sunt eum facere labore sit nulla laboriosam obcaecati debitis ratione 
+        possimus illum, amet excepturi.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Hic necessitatibus assumenda provident maiores adipisci repellendus cumque, 
+        sunt eum facere labore sit nulla laboriosam obcaecati debitis ratione 
+        possimus illum, amet excepturi.
+      </p>
+      <br>
+      <p class="hero-body subtitle" style="color: #007d64;"><b>Classes</b></p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Hic necessitatibus assumenda provident maiores adipisci repellendus cumque, 
+        sunt eum facere labore sit nulla laboriosam obcaecati debitis ratione 
+        possimus illum, amet excepturi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Hic necessitatibus assumenda provident maiores adipisci repellendus cumque, 
+        sunt eum facere labore sit nulla laboriosam obcaecati debitis ratione 
+        possimus illum, amet excepturi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Hic necessitatibus assumenda provident maiores adipisci repellendus cumque, 
+        sunt eum facere labore sit nulla laboriosam obcaecati debitis ratione 
+        possimus illum, amet excepturi.</p>
+        <br>
+      <p class="hero-body subtitle" style="color: #007d64;"><b>Communities</b></p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Hic necessitatibus assumenda provident maiores adipisci repellendus cumque, 
+        sunt eum facere labore sit nulla laboriosam obcaecati debitis ratione 
+        possimus illum, amet excepturi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Hic necessitatibus assumenda provident maiores adipisci repellendus cumque, 
+        sunt eum facere labore sit nulla laboriosam obcaecati debitis ratione 
+        possimus illum, amet excepturi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Hic necessitatibus assumenda provident maiores adipisci repellendus cumque, 
+        sunt eum facere labore sit nulla laboriosam obcaecati debitis ratione 
+        possimus illum, amet excepturi.</p>
+        <br>
+        <div>
+          <p class="title">Embedded Media</p>
+          <div class="grid">
+            <div class="cell">
+              <audio controls>
+                <source src="./audio/Holiday Weasel by Kevin MacLeod.mp3" type="audio/mp3">
+              </audio>
+              <p style="margin-left: 4%; color: #7e7e7e;"><em>Holiday Weasel by Kevin MacLeod</em></p>
+            </div>
+            <div class="cell">
+              <iframe width="420" height="345" 
+              src="https://www.youtube.com/embed/xxQf741CH-k?list=PLF9mJC4RrjIhv0_YjWvC0pmM1EZlVylBt" 
+              title="Learn German | Adjektivendungen | Nominativ | German for beginners | A2 - Lesson 5" 
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p style="margin-left: 4%; color: #7e7e7e;"><em>My most watched video sample</em></p>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+  </div>
+</body>
+
+</html>
