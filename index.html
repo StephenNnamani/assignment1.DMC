@@ -23,7 +23,7 @@
 });
 function updateClock() {
     const now = new Date();
-    const timeString = now.toLocaleTimeString();
+    const timeString = now.toLocaleTimeString('en-GB', { hour12: false });
     const clockEl = document.getElementById("realtime-clock");
     if (clockEl) {
       clockEl.textContent = timeString;
