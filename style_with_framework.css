@@ -18,3 +18,8 @@ body {
     border-style: solid !important; 
     border-radius: 50% !important;
 }
+
+img{
+    border-radius: 2% !important;
+    margin: 1%;
+}
